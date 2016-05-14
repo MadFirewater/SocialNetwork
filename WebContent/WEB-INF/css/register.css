@@ -1,0 +1,14 @@
+body {
+    font-family: "Segoe Print";
+    font-size: 16px;
+    text-align: center;
+}
+
+#registerTable{
+    text-align: left;
+    margin: auto;
+}
+
+#tableContainer{
+    margin-top: 10%;
+}
