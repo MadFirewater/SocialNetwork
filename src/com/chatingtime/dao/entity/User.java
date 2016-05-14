@@ -10,6 +10,22 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "user")
 public class User {
+	
+	
+
+	public User(Object[]information) {
+		super();
+		this.name = (String) information[0];
+		this.surname = (String) information[1];;
+		this.sex = (String) information[2];
+		this.location = (String) information[3];;
+		this.online = (boolean) information[4];;
+		this.busy = (boolean) information[5];;
+		this.email = (String) information[6];;
+		this.login = (String) information[7];;
+		this.password = (String) information[8];
+	}
+
 	@Id
     @Column(name= "id")
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -32,6 +48,15 @@ public class User {
 	
 	@Column(name="busy")
 	private boolean busy;
+	
+	@Column(name="email")
+	private String email;
+	
+	@Column(name="login")
+	private String login;
+	
+	@Column(name="password")
+	private String password;
 
 	public int getId() {
 		return id;
